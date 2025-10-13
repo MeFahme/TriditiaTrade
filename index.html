@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triditia Trade - Product Catalog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="gambar/logo/triditia-logo.png" alt="Triditia Trade Logo">
+            </div>
+            <h1>Triditia Trade</h1>
+            <p class="subtitle">PT TRIDITIA JAYA</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="nav-content">
+            <button class="nav-btn active" onclick="showSection('home')">Home</button>
+            <button class="nav-btn" onclick="showSection('products')">Products</button>
+            <button class="nav-btn" onclick="showSection('about')">About Us</button>
+            <button class="nav-btn" onclick="showSection('contact')">Contact</button>
+        </div>
+    </nav>
+
+    <div class="container">
+        <section id="home" class="section active">
+            <div class="hero">
+                <h2>Welcome to Triditia Trade</h2>
+                <p>Your trusted partner in premium beverage products distribution. We specialize in bringing quality flavored syrups and beverage ingredients to businesses across Indonesia. With our commitment to excellence and customer satisfaction, we provide the finest products for your beverage needs.</p>
+            </div>
+        </section>
+
+        <section id="products" class="section">
+            <h2 class="category-title">Our Product Catalog</h2>
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/denali-pandan.png" alt="Denali Pandan Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Denali</div>
+                        <div class="product-name">Pandan Flavoured Syrup</div>
+                        <div class="product-volume">750ml</div>
+                        <div class="product-desc">Premium pandan flavored syrup with authentic taste, perfect for beverages and desserts.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/denali-raspberry.png" alt="Denali Raspberry Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Denali</div>
+                        <div class="product-name">Raspberry Flavoured Syrup</div>
+                        <div class="product-volume">750ml</div>
+                        <div class="product-desc">Rich raspberry flavor that brings a burst of fruity sweetness to your drinks.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/denali-hazelnut.png" alt="Denali Hazelnut Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Denali</div>
+                        <div class="product-name">Hazelnut Flavoured Syrup</div>
+                        <div class="product-volume">750ml</div>
+                        <div class="product-desc">Smooth and nutty hazelnut syrup, ideal for coffee, lattes, and specialty beverages.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="hero">
+                <h2>About Triditia Trade</h2>
+                <p style="margin-bottom: 1.5rem;">PT Triditia Jaya through its Triditia Trade division is dedicated to providing premium quality beverage products to businesses throughout Indonesia. We partner with renowned international brands to bring you the best products in the market.</p>
+                <p>Our mission is to deliver excellence in product quality, reliable service, and competitive pricing. We understand the needs of modern businesses and work tirelessly to ensure your success is our success.</p>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="contact-section">
+                <h2 class="category-title">Contact Us</h2>
+                <p style="color: #666; margin-bottom: 2rem;">Get in touch with us for product inquiries, orders, or partnership opportunities.</p>
+                
+                <div class="contact-grid">
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <h3>Address</h3>
+                        <p>Jakarta, Indonesia</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <h3>Email</h3>
+                        <p>info@triditiatrade.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📱</div>
+                        <h3>Phone</h3>
+                        <p>+62 XXX XXXX XXXX</p>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕒</div>
+                        <h3>Business Hours</h3>
+                        <p>Mon - Fri: 9AM - 5PM</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 PT Triditia Jaya - Triditia Trade. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
