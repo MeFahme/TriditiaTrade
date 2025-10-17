@@ -477,22 +477,49 @@ footer {
     }
 
     /* CONTACT PAGE - FIX MOBILE LAYOUT */
+    .contact-section {
+        padding: 1.5rem 1rem;
+    }
+
     .contact-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1rem;
+        margin-top: 1.5rem;
     }
 
     .contact-item {
         min-height: auto;
-        padding: 1.5rem;
+        padding: 1.5rem 1rem;
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .contact-item h3 {
+        font-size: 1.1rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .contact-item p {
+        font-size: 0.9rem;
+        line-height: 1.5;
     }
 
     .contact-item iframe {
         height: 250px;
+        width: 100%;
+        margin-top: 1rem;
     }
 
     .contact-icon {
         font-size: 2rem;
+        margin-bottom: 0.75rem;
+    }
+
+    .intro-text {
+        margin-top: -1rem;
+        margin-bottom: 2rem;
+        font-size: 0.9rem;
+        padding: 0 0.5rem;
     }
 }
 
@@ -517,5 +544,23 @@ footer {
 
     .hero p {
         font-size: 1rem;
+    }
+
+    /* Extra small mobile fixes */
+    .contact-section {
+        padding: 1rem 0.75rem;
+    }
+
+    .contact-item {
+        padding: 1.25rem 0.75rem;
+    }
+
+    .contact-grid {
+        gap: 0.75rem;
+    }
+
+    .category-title {
+        font-size: 1.3rem;
+        padding: 0 0.5rem;
     }
 }
