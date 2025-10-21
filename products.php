@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triditia Trade - Katalog Produk</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="gambar/logo/triditia-logo.png" alt="Triditia Trade Logo">
+            </div>
+            <h1>Katalog Produk</h1>
+            <p class="subtitle">CV TRIDITIA JAYA</p>
+        </div>
+    </header>
+
+<nav>
+    <div class="nav-content">
+        <a href="index.php" class="nav-btn">Home</a>
+        <a href="products.php" class="nav-btn active">Products</a>
+        <a href="contact.php" class="nav-btn">Contact</a>
+        
+        <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
+            <a href="admin.php" class="nav-btn">Admin Panel</a>
+            <a href="logout.php" class="nav-btn-login">Logout</a>
+        <?php else: ?>
+            <a href="login.php" class="nav-btn-login">Login</a>
+        <?php endif; ?>
+    </div>
+</nav>
+
+    <div class="container">
+        <section id="products" class="section">
+            <div class="products-grid">
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/denali-banana.png" alt="Denali Banana Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Denali</div>
+                        <div class="product-name">Banana Flavoured Syrup</div>
+                        <div class="product-volume">750ml</div>
+                        <div class="product-price">Rp 108.000</div>
+                        <div class="product-desc">Sirup rasa pisang premium yang menghadirkan aroma dan rasa manis yang khas.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/denali-raspberry.png" alt="Denali Raspberry Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Denali</div>
+                        <div class="product-name">Raspberry Flavoured Syrup</div>
+                        <div class="product-volume">750ml</div>
+                        <div class="product-price">Rp 108.000</div>
+                        <div class="product-desc">Sirup rasa raspberry yang kaya dan sedikit asam, memberikan sentuhan buah yang menyegarkan.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/denali-pandan.png" alt="Denali Pandan Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Denali</div>
+                        <div class="product-name">Pandan Flavoured Syrup</div>
+                        <div class="product-volume">750ml</div>
+                        <div class="product-price">Rp 108.000</div>
+                        <div class="product-desc">Sirup premium dengan cita rasa pandan yang otentik dan wangi, cocok untuk minuman modern.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/denali-hazelnut.png" alt="Denali Hazelnut Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Denali</div>
+                        <div class="product-name">Hazelnut Flavoured Syrup</div>
+                        <div class="product-volume">750ml</div>
+                        <div class="product-price">Rp 108.000</div>
+                        <div class="product-desc">Sirup hazelnut yang lembut dan kaya rasa, menjadi pilihan favorit untuk kopi dan latte.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/delifru-ice-cream.png" alt="Delifru Iris Cream Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Delifru</div>
+                        <div class="product-name">Iris Cream Syrup</div>
+                        <div class="product-volume">1000ml</div>
+                        <div class="product-price">Rp 124.000</div>
+                        <div class="product-desc">Sirup rasa Iris Cream yang unik dan lembut, memberikan cita rasa mewah pada setiap sajian.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/apple-green.png" alt="Green Apple Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Trijie</div>
+                        <div class="product-name">Green Apple Syrup</div>
+                        <div class="product-volume">750ml</div>
+                        <div class="product-price">Rp 100.000</div>
+                        <div class="product-desc">Sirup rasa apel hijau yang segar dan renyah, sempurna untuk mocktail dan teh.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/trijie-vanilla.png" alt="Trijie Vanilla">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Trijie</div>
+                        <div class="product-name">Vanilla Syrup</div>
+                        <div class="product-volume">750ml</div>
+                        <div class="product-price">Rp 95.000</div>
+                        <div class="product-desc">Aroma vanila klasik yang manis dan lembut, serbaguna untuk memperkaya rasa minuman.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/trijie-butterscotch.png" alt="Trijie Butterscotch Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Trijie</div>
+                        <div class="product-name">Butterscotch Syrup</div>
+                        <div class="product-volume">750ml</div>
+                        <div class="product-price">Rp 95.000</div>
+                        <div class="product-desc">Kombinasi rasa mentega dan gula merah yang kaya, memberikan sentuhan klasik yang hangat.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/geezie-strawberry.png" alt="Geezie Strawberry Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Geezie</div>
+                        <div class="product-name">Strawberry Syrup</div>
+                        <div class="product-volume">1000ml</div>
+                        <div class="product-price">Rp 102.000</div>
+                        <div class="product-desc">Sirup stroberi dengan rasa buah asli yang manis dan menyegarkan, ideal untuk milkshake.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/geezie-lemon.png" alt="Geezie Lemon Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Geezie</div>
+                        <div class="product-name">Lemon Syrup</div>
+                        <div class="product-volume">1000ml</div>
+                        <div class="product-price">Rp 102.000</div>
+                        <div class="product-desc">Sirup lemon dengan keseimbangan rasa asam dan manis yang pas, memberikan kesegaran.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/geezie-leci.png" alt="Geezie Lychee Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Geezie</div>
+                        <div class="product-name">Lychee Syrup</div>
+                        <div class="product-volume">1000ml</div>
+                        <div class="product-price">Rp 102.000</div>
+                        <div class="product-desc">Menghadirkan rasa manis dan eksotis dari buah leci, sangat cocok untuk Iced Lychee Tea.</div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/gurenca.png" alt="Gurenca Gula Aren Cair">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Gurenca</div>
+                        <div class="product-name">Gula Aren Cair</div>
+                        <div class="product-volume">1000ml</div>
+                        <div class="product-price">Rp 53.000</div>
+                        <div class="product-desc">Gula aren cair 100% original, memberikan rasa manis yang khas untuk kopi susu kekinian.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/powder-matcha.png" alt="Matcha Powder">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Powder Variant</div>
+                        <div class="product-name">Matcha Powder</div>
+                        <div class="product-volume">1kg</div>
+                        <div class="product-price">Rp 130.000</div>
+                        <div class="product-desc">Bubuk matcha kualitas premium dengan rasa yang otentik dan warna yang pekat.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/powder-thai-tea.png" alt="Teh Tarik Powder">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Powder Variant</div>
+                        <div class="product-name">Teh Tarik Powder</div>
+                        <div class="product-volume">1kg</div>
+                        <div class="product-price">Rp 85.000</div>
+                        <div class="product-desc">Bubuk instan untuk membuat teh tarik klasik dengan rasa yang kaya dan busa yang lembut.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/powder-red-velvet.png" alt="Red Velvet Powder">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Powder Variant</div>
+                        <div class="product-name">Red Velvet Powder</div>
+                        <div class="product-volume">1kg</div>
+                        <div class="product-price">Rp 60.000</div>
+                        <div class="product-desc">Bubuk minuman rasa kue red velvet yang unik dengan sentuhan coklat dan cream cheese.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/powder-chocomalt-mix.png" alt="Chocomalt Powder">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Nestle</div>
+                        <div class="product-name">Chocomalt Mix Powder</div>
+                        <div class="product-volume">1kg</div>
+                        <div class="product-price">Rp 75.000</div>
+                        <div class="product-desc">Bubuk choco malt yang dirancang khusus untuk bisnis, rasa coklat malt yang disukai.</div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/powder-cream-cheese.png" alt="Cream Cheese Powder">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Powder Variant</div>
+                        <div class="product-name">Cream Cheese Powder</div>
+                        <div class="product-volume">1kg</div>
+                        <div class="product-price">Rp 110.000</div>
+                        <div class="product-desc">Bubuk rasa cream cheese yang gurih dan lezat, cocok sebagai topping minuman.</div>
+                    </div>
+                </div>
+                
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/powder-gurin-tea.png" alt="Green Tea Powder">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Powder Variant</div>
+                        <div class="product-name">Green Tea Powder</div>
+                        <div class="product-volume">1kg</div>
+                        <div class="product-price">Rp 75.000</div>
+                        <div class="product-desc">Bubuk green tea dengan aroma melati yang khas, memberikan rasa teh hijau menyegarkan.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/powder-thai-tea.png" alt="Thai Tea Powder">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Powder Variant</div>
+                        <div class="product-name">Thai Tea Powder</div>
+                        <div class="product-volume">1kg</div>
+                        <div class="product-price">Rp 75.000</div>
+                        <div class="product-desc">Bubuk teh Thailand otentik untuk membuat es teh Thai yang creamy dan wangi.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/oreo-crumb.png" alt="Oreo Crumb">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Oreo</div>
+                        <div class="product-name">Oreo Crumb</div>
+                        <div class="product-volume">1kg</div>
+                        <div class="product-price">Rp 76.500</div>
+                        <div class="product-desc">Remahan biskuit Oreo tanpa krim, sempurna sebagai topping atau campuran minuman.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/milk-life.png" alt="UHT Milk Life">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Milk Life</div>
+                        <div class="product-name">Susu UHT Full Cream</div>
+                        <div class="product-volume">1000ml</div>
+                        <div class="product-price">Rp 17.500</div>
+                        <div class="product-desc">Susu UHT full cream dari susu segar berkualitas</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/sunbay-evaporated.png" alt="Sunbay Evaporated Milk">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Sunbay</div>
+                        <div class="product-name">Evaporated Creamer</div>
+                        <div class="product-volume">380g</div>
+                        <div class="product-price">Rp 15.000</div>
+                        <div class="product-desc">Susu evaporasi yang menambah kekayaan rasa dan tekstur creamy pada minuman.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/nestle-carnation.png" alt="Nestle Carnation SKM">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Nestle</div>
+                        <div class="product-name">Carnation SKM</div>
+                        <div class="product-volume">488g</div>
+                        <div class="product-price">Rp 15.500</div>
+                        <div class="product-desc">Susu kental manis Carnation yang legendaris, memberikan rasa manis dan creamy.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CV Triditia Jaya - Triditia Trade. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>  

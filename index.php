@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triditia Trade - Beranda</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <div class="logo">
+                <img src="gambar/logo/triditia-logo.png" alt="Triditia Trade Logo">
+            </div>
+            <h1>Triditia Trade</h1>
+            <p class="subtitle">CV TRIDITIA JAYA</p>
+        </div>
+    </header>
+
+<nav>
+    <div class="nav-content">
+        <a href="index.php" class="nav-btn active">Home</a>
+        <a href="products.php" class="nav-btn">Products</a>
+        <a href="#about" class="nav-btn">About Us</a>
+        <a href="contact.php" class="nav-btn">Contact</a>
+        
+        <?php if (isset($_SESSION['loggedin']) && $_SESSION['loggedin'] === true): ?>
+            <a href="admin.php" class="nav-btn">Admin Panel</a>
+            <a href="logout.php" class="nav-btn-login">Logout</a>
+        <?php else: ?>
+            <a href="login.php" class="nav-btn-login">Login</a>
+        <?php endif; ?>
+    </div>
+</nav>
+
+    <div class="container">
+        <section id="home" class="section">
+            <div class="hero">
+                <h2>Selamat Datang di Triditia Trade</h2>
+                <p>Mitra terpercaya Anda dalam distribusi produk minuman premium. Kami adalah spesialis dalam menyediakan sirup perasa dan bahan minuman berkualitas untuk bisnis di seluruh Indonesia.</p>
+            </div>
+        </section>
+
+        <section id="products-preview" class="section">
+            <h2 class="category-title">Produk Unggulan Kami</h2>
+            <p class="intro-text">
+                Pilihan terbaik dari sirup premium, bubuk minuman berkualitas, dan bahan pelengkap lainnya.
+            </p>
+
+            <div class="products-grid">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/denali-banana.png" alt="Denali Syrup">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Denali</div>
+                        <div class="product-name">Flavoured Syrup</div>
+                        <div class="product-desc">Sirup premium dengan berbagai varian rasa otentik untuk meningkatkan kualitas minuman Anda.</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/powder-matcha.png" alt="Matcha Powder">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Powder Mix</div>
+                        <div class="product-name">Matcha Premium Powder</div>
+                        <div class="product-desc">Bubuk matcha kualitas terbaik dengan rasa yang pekat dan warna yang cerah, ideal untuk latte.</div>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/gurenca.png" alt="Gula Aren Cair">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Gurenca</div>
+                        <div class="product-name">Gula Aren Cair</div>
+                        <div class="product-desc">Gula aren cair murni, memberikan rasa manis legit yang khas untuk kopi susu dan minuman tradisional.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cta-wrapper">
+                <a href="products.html" class="cta-button">Lihat Semua Produk</a>
+            </div>
+        </section>
+        
+        <section id="about" class="section">
+            <div class="about-section">
+                <h2 class="category-title">Tentang Kami</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Distributor Terpercaya Anda</h3>
+                        <p>Triditia Trade adalah distributor terkemuka yang berfokus pada penyediaan bahan baku minuman berkualitas tinggi untuk industri Horeca (Hotel, Restoran, Kafe). Kami berkomitmen untuk menyediakan produk terbaik dan layanan pelanggan yang luar biasa untuk mendukung pertumbuhan bisnis Anda.</p>
+                        <p>Dengan jaringan yang luas dan pemahaman mendalam tentang pasar, kami memastikan produk yang kami tawarkan adalah produk pilihan yang akan memuaskan pelanggan Anda.</p>
+                    </div>
+                    <div class="about-image">
+                        <img src="gambar/logo/triditia-logo.png" alt="Logo di bagian Tentang Kami">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 CV Triditia Jaya - Triditia Trade. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
