@@ -1,14 +1,14 @@
 <?php
-// Mulai session
+// logout.php
 session_start();
 
-// Hapus semua variabel session
+// Hapus semua variabel sesi
 $_SESSION = array();
 
-// Hancurkan session
+// Hancurkan sesi
 session_destroy();
 
 // Redirect ke halaman login
-header("location: login.php");
+header("Location: login.php");
 exit;
 ?>
