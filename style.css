@@ -76,6 +76,7 @@ nav {
     padding: 1rem 2rem;
     display: flex;
     justify-content: center;
+    align-items: center; /* Menyelaraskan item secara vertikal */
     gap: 2rem;
     flex-wrap: wrap;
 }
@@ -104,6 +105,27 @@ nav {
     border-bottom-color: #dc2626;
     font-weight: bold;
 }
+
+/* BARU: Style untuk Tombol Login/Logout */
+.nav-btn-login {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-decoration: none;
+    display: inline-block;
+    background: #dc2626;
+    color: white;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(220, 38, 38, 0.2);
+}
+
+.nav-btn-login:hover {
+    background: #991b1b;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(153, 27, 27, 0.3);
+}
+
 
 /* =================================
    Main Container & Sections
@@ -384,6 +406,8 @@ nav {
     text-decoration: none;
     transition: all 0.3s ease;
     box-shadow: 0 5px 15px rgba(220, 38, 38, 0.3);
+    border: none;
+    cursor: pointer;
 }
 
 .cta-button:hover {
@@ -428,6 +452,224 @@ footer {
 }
 
 /* =================================
+   BARU: Login & Admin Panel
+   ================================= */
+
+/* --- Halaman Login --- */
+.login-container {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 3rem;
+    background: white;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.login-container h2 {
+    color: #dc2626;
+    margin-bottom: 2rem;
+    font-weight: 600;
+}
+
+.back-to-home-link {
+    display: inline-block;
+    margin-top: 1.5rem;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.back-to-home-link:hover {
+    color: #dc2626;
+    text-decoration: underline;
+}
+
+/* --- Panel Admin --- */
+.admin-section {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem 3rem;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.admin-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+    margin-top: 2rem;
+}
+
+.product-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.95rem;
+    min-width: 600px; /* Membantu overflow horizontal */
+}
+
+.product-table th, 
+.product-table td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    vertical-align: middle;
+}
+
+.product-table th {
+    background: #f8f9fa;
+    font-weight: 600;
+    color: #333;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.05em;
+}
+
+.product-table tbody tr:hover {
+    background: #fdfafb;
+}
+
+.table-product-img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+    border-radius: 8px;
+    background: #f5f7fa;
+    padding: 5px;
+    border: 1px solid #eee;
+}
+
+.btn-edit, 
+.btn-delete {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.btn-edit {
+    background: #3498db;
+    color: white;
+    margin-right: 0.5rem;
+}
+.btn-edit:hover {
+    background: #2980b9;
+}
+
+.btn-delete {
+    background: #e74c3c;
+    color: white;
+}
+.btn-delete:hover {
+    background: #c0392b;
+}
+
+/* --- Modal (untuk Admin) --- */
+.modal {
+    display: none; 
+    position: fixed;
+    z-index: 1001;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+    animation: fadeIn 0.3s ease;
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 2.5rem;
+    border: none;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+    position: relative;
+    animation: slideIn 0.4s ease-out;
+}
+
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 2.5rem;
+    font-weight: bold;
+    line-height: 1;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #333;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-content h2 {
+    color: #dc2626;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* --- Style Form Bersama (Login & Modal) --- */
+.input-group {
+    margin-bottom: 1.5rem;
+    text-align: left;
+}
+
+.input-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #555;
+    font-size: 0.95rem;
+}
+
+.input-group input[type="text"],
+.input-group input[type="password"],
+.input-group input[type="file"] {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    box-sizing: border-box; /* Memastikan padding tidak merusak layout */
+}
+
+.input-group input[type="text"]:focus,
+.input-group input[type="password"]:focus {
+    border-color: #dc2626;
+    box-shadow: 0 0 8px rgba(220, 38, 38, 0.2);
+    outline: none;
+}
+
+/* Keyframe animasi untuk modal */
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+@keyframes slideIn {
+    from {transform: translateY(-50px); opacity: 0;}
+    to {transform: translateY(0); opacity: 1;}
+}
+
+
+/* =================================
    Responsive Design
    ================================= */
 @media (max-width: 768px) {
@@ -447,7 +689,9 @@ footer {
 
     .hero, 
     .about-section, 
-    .contact-section {
+    .contact-section,
+    .login-container,
+    .admin-section {
         padding: 2rem;
     }
     
@@ -464,7 +708,8 @@ footer {
         gap: 1rem;
     }
 
-    .nav-btn {
+    .nav-btn,
+    .nav-btn-login { /* Terapkan juga di sini */
         padding: 0.5rem 1rem;
         font-size: 0.9rem;
     }
@@ -522,6 +767,16 @@ footer {
         font-size: 0.9rem;
         padding: 0 0.5rem;
     }
+    
+    .admin-header {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    
+    .admin-header .cta-button {
+        width: 100%;
+        text-align: center;
+    }
 }
 
 @media (max-width: 480px) {
@@ -532,12 +787,24 @@ footer {
     .nav-content {
         gap: 0.5rem;
         padding: 1rem;
+        justify-content: space-around; /* Lebih baik di mobile */
     }
     
-    .nav-btn {
+    .nav-btn,
+    .nav-btn-login {
         padding: 0.5rem;
         font-size: 0.85rem;
+        flex-grow: 1; /* Membuat tombol memenuhi space */
+        text-align: center;
+        margin: 0.25rem 0;
     }
+    
+    /* Pisahkan login agar tetap menonjol */
+    .nav-btn-login {
+        flex-grow: 0; 
+        padding: 0.5rem 1rem;
+    }
+
 
     .hero h2 {
         font-size: 1.5rem;
@@ -545,6 +812,11 @@ footer {
 
     .hero p {
         font-size: 1rem;
+    }
+    
+    .login-container,
+    .admin-section {
+        padding: 1.5rem;
     }
 
     /* Extra small mobile fixes */
@@ -563,5 +835,21 @@ footer {
     .category-title {
         font-size: 1.3rem;
         padding: 0 0.5rem;
+    }
+    
+    .modal-content {
+        margin: 5% auto;
+        padding: 2rem 1.5rem;
+        width: 95%;
+    }
+    
+    .btn-edit,
+    .btn-delete {
+        width: 100%;
+        margin-bottom: 0.5rem;
+    }
+    
+    .btn-edit {
+        margin-right: 0;
     }
 }

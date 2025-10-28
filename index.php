@@ -43,10 +43,7 @@
 
         <section id="products-preview" class="section">
             <h2 class="category-title">Produk Unggulan Kami</h2>
-            <p class="intro-text">
-                Pilihan terbaik dari sirup premium, bubuk minuman berkualitas, dan bahan pelengkap lainnya.
-            </p>
-
+            
             <div class="products-grid">
                 <div class="product-card">
                     <div class="product-image">
@@ -80,8 +77,8 @@
                 </div>
             </div>
 
-            <div class="cta-wrapper">
-                <a href="products.html" class="cta-button">Lihat Semua Produk</a>
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="products.php" class="cta-button">Lihat Semua Produk</a>
             </div>
         </section>
         
@@ -91,8 +88,8 @@
                 <div class="about-content">
                     <div class="about-text">
                         <h3>Distributor Terpercaya Anda</h3>
-                        <p>Triditia Trade adalah distributor terkemuka yang berfokus pada penyediaan bahan baku minuman berkualitas tinggi untuk industri Horeca (Hotel, Restoran, Kafe). Kami berkomitmen untuk menyediakan produk terbaik dan layanan pelanggan yang luar biasa untuk mendukung pertumbuhan bisnis Anda.</p>
-                        <p>Dengan jaringan yang luas dan pemahaman mendalam tentang pasar, kami memastikan produk yang kami tawarkan adalah produk pilihan yang akan memuaskan pelanggan Anda.</p>
+                        <p>Triditia Trade adalah distributor terkemuka yang berfokus pada penyediaan bahan baku minuman berkualitas. Kami berkomitmen untuk menyediakan produk terbaik dan layanan pelanggan yang luar biasa untuk mendukung pertumbuhan bisnis Anda.</p>
+                        <p>Kami memastikan produk yang kami tawarkan adalah produk pilihan yang akan memuaskan pelanggan Anda.</p>
                     </div>
                     <div class="about-image">
                         <img src="gambar/logo/triditia-logo.png" alt="Logo di bagian Tentang Kami">

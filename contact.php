@@ -36,7 +36,7 @@
         <section id="contact" class="section">
             <div class="contact-section">
                 <h2 class="category-title">Informasi Kontak</h2>
-                <p class="intro-text">
+                <p style="color: #666; margin-top: -1.5rem; margin-bottom: 3rem;">
                     Hubungi kami untuk pertanyaan produk, pemesanan, atau peluang kemitraan.
                 </p>
                 
@@ -62,24 +62,26 @@
                         </div>
                     </a>
 
-                    <div class="contact-item">
-                        <div class="contact-icon">📍</div>
-                        <h3>Alamat</h3>
-                        <a href="https://maps.app.goo.gl/9aC3fBqfX9vC7qJG7" target="_blank" rel="noopener noreferrer">
-                            <p>Jl. Ade Irma Suryani No.198B, Sungai Pinang Dalam, Kec. Sungai Pinang, Kota Samarinda, Kalimantan Timur 75242</p>
-                        </a>
-                    </div>
+                    <a href="https://maps.google.com/?cid=11596304394904524444&g_mp=Cidnb29nbGUubWFwcy5wbGFjZXMudjEuUGxhY2VzLlNlYXJjaFRleHQ" target="_blank" class="contact-item-link">
+                        <div class="contact-item">
+                            <div class="contact-icon">📍</div>
+                            <h3>Address</h3>
+                            <p>Jl. Ade Irma Suryani No.198B, Sungai Pinang Dalam, Kec. Sungai Pinang, Kota Samarinda, Kalimantan Timur 75242</p><br>
+                        
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.6746927532577!2d117.16145001028524!3d-0.48616233527244385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67f05131f760d%3A0xfc8d827fc13df2f5!2sCV.%20Triditia%20Jaya!5e0!3m2!1sen!2sid!4v1760428470270!5m2!1sen!2sid" 
+                                height="350" 
+                                style="border:0;" 
+                                allowfullscreen="" 
+                                loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade">
+                            </iframe>
+                        </div>
+                    </a>
+
                 </div>
 
-                <div class="map-container">
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.680072382405!2d117.15170587496472!3d-0.4727503995874421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2df67f33883a936d%3A0x6b29d7a26f8279a!2sJl.%20Ade%20Irma%20Suryani%20Nasution%20No.198B%2C%20Sungai%20Pinang%20Dalam%2C%20Kec.%20Sungai%20Pinang%2C%20Kota%20Samarinda%2C%20Kalimantan%20Timur%2075242!5e0!3m2!1sid!2sid!4v1668888888888!5m2!1sid!2sid" 
-                        allowfullscreen="" 
-                        loading="lazy" 
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
                 </div>
-            </div>
         </section>
     </div>
 

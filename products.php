@@ -207,14 +207,14 @@
 
                 <div class="product-card">
                     <div class="product-image">
-                        <img src="gambar/produk/powder-thai-tea.png" alt="Teh Tarik Powder">
+                        <img src="gambar/produk/powder-thai-tea.png" alt="Thai TeA Powder">
                     </div>
                     <div class="product-info">
                         <div class="product-brand">Powder Variant</div>
-                        <div class="product-name">Teh Tarik Powder</div>
+                        <div class="product-name">Thai Tea Powder</div>
                         <div class="product-volume">1kg</div>
                         <div class="product-price">Rp 85.000</div>
-                        <div class="product-desc">Bubuk instan untuk membuat teh tarik klasik dengan rasa yang kaya dan busa yang lembut.</div>
+                        <div class="product-desc">Bubuk Thai Tea premium yang diformulasikan untuk rasa otentik dan warna yang pekat. Solusi praktis dan efisien untuk menyajikan Thai Tea berkualitas secara instan..</div>
                     </div>
                 </div>
 
@@ -263,23 +263,10 @@
                     </div>
                     <div class="product-info">
                         <div class="product-brand">Powder Variant</div>
-                        <div class="product-name">Green Tea Powder</div>
+                        <div class="product-name">Gurin Tea Powder</div>
                         <div class="product-volume">1kg</div>
                         <div class="product-price">Rp 75.000</div>
                         <div class="product-desc">Bubuk green tea dengan aroma melati yang khas, memberikan rasa teh hijau menyegarkan.</div>
-                    </div>
-                </div>
-
-                <div class="product-card">
-                    <div class="product-image">
-                        <img src="gambar/produk/powder-thai-tea.png" alt="Thai Tea Powder">
-                    </div>
-                    <div class="product-info">
-                        <div class="product-brand">Powder Variant</div>
-                        <div class="product-name">Thai Tea Powder</div>
-                        <div class="product-volume">1kg</div>
-                        <div class="product-price">Rp 75.000</div>
-                        <div class="product-desc">Bubuk teh Thailand otentik untuk membuat es teh Thai yang creamy dan wangi.</div>
                     </div>
                 </div>
 
@@ -293,6 +280,19 @@
                         <div class="product-volume">1kg</div>
                         <div class="product-price">Rp 76.500</div>
                         <div class="product-desc">Remahan biskuit Oreo tanpa krim, sempurna sebagai topping atau campuran minuman.</div>
+                    </div>
+                </div>
+
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="gambar/produk/magic-powder.png" alt="Magic Powder">
+                    </div>
+                    <div class="product-info">
+                        <div class="product-brand">Seasoning</div>
+                        <div class="product-name">Magic Powder</div>
+                        <div class="product-volume">g</div>
+                        <div class="product-price">Rp </div>
+                        <div class="product-desc"></div>
                     </div>
                 </div>
 
@@ -344,4 +344,4 @@
 
     <script src="script.js"></script>
 </body>
-</html>  
+</html>
